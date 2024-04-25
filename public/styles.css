@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.big-container {
+    width: 70%; /* Büyük konteynerin genişliği */
+}
+
+.medium-container,
+.small-container {
+    width: 50%; /* Orta ve küçük konteynerlerin genişliği */
+}
+
+.flag-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flag {
+    width: 150px; /* Orta boy bayrak genişliği */
+    height: 90px; /* Orta boy bayrak yüksekliği */
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    margin: 3dvb; /* Bayraklar arasında boşluk bırak */
+}
+
+.small-flag {
+    width: 100px; /* Küçük boy bayrak genişliği */
+    height: 60px; /* Küçük boy bayrak yüksekliği */
+}
+/* Büyük konteyner içindeki bayraklar */
+.big-container .flag {
+    width: 800px; /* Büyük konteynerdaki bayrakların genişliği */
+    height: 500px; /* Büyük konteynerdaki bayrakların yüksekliği */
+}
+
+/* Orta konteyner içindeki bayraklar */
+.medium-container .flag {
+    width: 150px; /* Orta konteynerdaki bayrakların genişliği */
+    height: 90px; /* Orta konteynerdaki bayrakların yüksekliği */
+}
+
+/* Küçük konteyner içindeki bayraklar */
+.small-container .flag {
+    width: 100px; /* Küçük konteynerdaki bayrakların genişliği */
+    height: 60px; /* Küçük konteynerdaki bayrakların yüksekliği */
+}

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.big-container {
+    width: 70%; /* Büyük konteynerin genişliği */
+}
+
+.medium-container,
+.small-container {
+    width: 50%; /* Orta ve küçük konteynerlerin genişliği */
+}
+
+.flag-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flag {
+    width: 150px; /* Orta boy bayrak genişliği */
+    height: 90px; /* Orta boy bayrak yüksekliği */
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    margin: 3px; /* Bayraklar arasında boşluk bırak */
+}
+
+.small-flag {
+    width: 100px; /* Küçük boy bayrak genişliği */
+    height: 60px; /* Küçük boy bayrak yüksekliği */
+}
+
+/* Banner konteynerı */
+.banner-container {
+    text-align: center;
+    margin-top: 20px; /* Sayfanın üst kısmında biraz boşluk bırak */
+}
+
+.banner-container a {
+    display: inline-block;
+}
+
+.banner-container img {
+    max-width: 100%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
+    height: auto; /* Otomatik yükseklik ayarı */
+}
