@@ -9,13 +9,17 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(() => {
-        console.log("MongoDB bağlantısı başarılı.");
-    })
-    .catch((err) => {
-        console.error("MongoDB bağlantısı hatası:", err);
-    });
+const MONGODB_URI = 'mongodb+srv://canerrona1:cWgHe4FcMPt6UNVs@voteflag.k97au7m.mongodb.net/flags?retryWrites=true&w=majority';
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => {
+    console.log("MongoDB bağlantısı başarılı.");
+})
+.catch((err) => {
+    console.error("MongoDB bağlantısı hatası:", err);
+});
 
 app.use(express.json());
 app.use(cors());
