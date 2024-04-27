@@ -9,10 +9,11 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 require('dotenv').config();
 
-const MONGODB_URI = 'mongodb+srv://canerrona1:cWgHe4FcMPt6UNVs@voteflag.k97au7m.mongodb.net/flags?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI; // MONGODB_URI'yi .env dosyasından al
+
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
 })
 .then(() => {
     console.log("MongoDB bağlantısı başarılı.");
@@ -24,7 +25,20 @@ mongoose.connect(MONGODB_URI, {
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public'))); // Statik dosyaları sunmak için public klasörünü kullan
 
+// /flags endpoint'ine GET isteği karşılayan rota
+app.get('/flags', async (req, res) => {
+    try {
+        const flags = await Flag.find();
+        res.json(flags);
+    } catch (error) {
+        console.error('Bayraklar alınırken hata:', error);
+        res.status(500).json({ error: 'Bayraklar alınırken bir hata oluştu.' });
+    }
+});
+
+// /vote endpoint'ine POST isteği karşılayan rota
 app.post('/vote', async (req, res) => {
     const { flagId } = req.body;
     const ip = req.ip;
@@ -59,7 +73,7 @@ app.post('/vote', async (req, res) => {
     }
 });
 
-// Other routes and middleware...
+// Diğer rotalar ve middleware'ler...
 
 app.listen(PORT, () => {
     console.log(`Sunucu ${PORT} portunda çalışıyor.`);

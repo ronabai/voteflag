@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -40,25 +42,27 @@ body {
     background-size: contain;
     background-position: center;
     cursor: pointer;
-    margin: 3px; /* Bayraklar arasında boşluk bırak */
+    margin: 3dvb; /* Bayraklar arasında boşluk bırak */
 }
 
 .small-flag {
     width: 100px; /* Küçük boy bayrak genişliği */
     height: 60px; /* Küçük boy bayrak yüksekliği */
 }
-
-/* Banner konteynerı */
-.banner-container {
-    text-align: center;
-    margin-top: 20px; /* Sayfanın üst kısmında biraz boşluk bırak */
+/* Büyük konteyner içindeki bayraklar */
+.big-container .flag {
+    width: 800px; /* Büyük konteynerdaki bayrakların genişliği */
+    height: 500px; /* Büyük konteynerdaki bayrakların yüksekliği */
 }
 
-.banner-container a {
-    display: inline-block;
+/* Orta konteyner içindeki bayraklar */
+.medium-container .flag {
+    width: 150px; /* Orta konteynerdaki bayrakların genişliği */
+    height: 90px; /* Orta konteynerdaki bayrakların yüksekliği */
 }
 
-.banner-container img {
-    max-width: 100%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
-    height: auto; /* Otomatik yükseklik ayarı */
+/* Küçük konteyner içindeki bayraklar */
+.small-container .flag {
+    width: 100px; /* Küçük konteynerdaki bayrakların genişliği */
+    height: 60px; /* Küçük konteynerdaki bayrakların yüksekliği */
 }
