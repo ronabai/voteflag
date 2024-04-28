@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    text-align: center;
+    text-align: center; /* İçeriği merkezde hizalamak için */
     padding: 20px;
     margin: 10px;
     border: 2px solid #ccc;
@@ -35,11 +35,24 @@ body {
     margin: 5px; /* Bayraklar arasındaki boşluk */
 }
 
+/* Orta konteyner içindeki bayraklar */
+.medium-container .flag {
+    width: 100%; /* Orta konteynerdaki bayrakların genişliği */
+    height: auto; /* Orta konteynerdaki bayrakların yüksekliği */
+}
+
+/* Küçük konteyner içindeki bayraklar */
+.small-container .flag {
+    width: 100%; /* Küçük konteynerdaki bayrakların genişliği */
+    height: auto; /* Küçük konteynerdaki bayrakların yüksekliği */
+}
+
 /* Medya sorguları */
 @media only screen and (min-width: 600px) {
     /* Tablet ve büyük ekranlar için stiller buraya */
     .big-container {
         width: 70%;
+        max-width: 600px; /* Ekleyeceğimiz max-width değeri */
     }
     .medium-container,
     .small-container {
@@ -49,9 +62,15 @@ body {
 
 @media only screen and (max-width: 599px) {
     /* Mobil cihazlar için stiller buraya */
-    .big-container,
+    .big-container .flag {
+        max-width: 100%; /* Bayraklar ekran genişliğine sığacak şekilde ayarlanacak */
+    }
+    .big-container {
+        width: 100%; /* .big-container ekran genişliğine tam olarak genişleyecek */
+        max-width: 100%; /* Herhangi bir maksimum genişlik sınırlaması kaldırılacak */
+    }
     .medium-container,
     .small-container {
-        width: 100%;
+        width: 100%; /* Diğer konteynerlar da ekran genişliğine tam olarak genişleyecek */
     }
 }
