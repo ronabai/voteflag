@@ -42,12 +42,12 @@ body {
 
 /* Orta konteyner içindeki bayraklar */
 .medium-container .flag {
-    max-width: 50%; /* Orta konteynerdaki bayrakların maksimum genişliği */
+    max-width: 33%; /* Orta konteynerdaki bayrakların maksimum genişliği */
 }
 
 /* Küçük konteyner içindeki bayraklar */
 .small-container .flag {
-    max-width: 33%; /* Küçük konteynerdaki bayrakların maksimum genişliği */
+    max-width: 20%; /* Küçük konteynerdaki bayrakların maksimum genişliği */
 }
 
 /* Medya sorguları */
