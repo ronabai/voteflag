@@ -30,25 +30,9 @@ body {
     background-size: contain;
     background-position: center;
     cursor: pointer;
-    margin: 3px; /* Bayraklar arasında boşluk bırak */
-}
-
-/* Büyük konteyner içindeki bayraklar */
-.big-container .flag {
-    width: 100%; /* Büyük konteynerdaki bayrakların genişliği */
-    height: auto; /* Büyük konteynerdaki bayrakların yüksekliği */
-}
-
-/* Orta konteyner içindeki bayraklar */
-.medium-container .flag {
-    width: 100%; /* Orta konteynerdaki bayrakların genişliği */
-    height: auto; /* Orta konteynerdaki bayrakların yüksekliği */
-}
-
-/* Küçük konteyner içindeki bayraklar */
-.small-container .flag {
-    width: 100%; /* Küçük konteynerdaki bayrakların genişliği */
-    height: auto; /* Küçük konteynerdaki bayrakların yüksekliği */
+    width: 100%; /* Bayrakların genişliği */
+    height: auto; /* Bayrakların yüksekliği otomatik ayarlanacak */
+    margin: 5px; /* Bayraklar arasındaki boşluk */
 }
 
 /* Medya sorguları */
