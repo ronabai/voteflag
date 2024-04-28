@@ -12,11 +12,9 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    padding: 10;
+    padding: 10; /* Burada padding değerini piksel olarak belirtmek gerekir, örneğin: padding: 10px; */
     margin: 0; /* Tarayıcıların varsayılan kenar boşluğunu kaldırmak için */
 }
-
-
 
 .container {
     text-align: center; /* İçeriği merkezde hizalamak için */
