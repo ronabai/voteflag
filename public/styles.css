@@ -19,6 +19,15 @@ body {
     border-radius: 10px;
 }
 
+.big-container {
+    width: 70%; /* Büyük konteynerin genişliği */
+}
+
+.medium-container,
+.small-container {
+    width: 50%; /* Orta ve küçük konteynerlerin genişliği */
+}
+
 .flag-container {
     display: flex;
     justify-content: center;
@@ -26,38 +35,30 @@ body {
 }
 
 .flag {
-    width: 500px; /* Büyük boy bayrak genişliği */
-    height: 300px; /* Büyük boy bayrak yüksekliği */
+    width: 150px; /* Orta boy bayrak genişliği */
+    height: 90px; /* Orta boy bayrak yüksekliği */
     background-size: contain;
     background-position: center;
     cursor: pointer;
     margin: 3px; /* Bayraklar arasında boşluk bırak */
 }
 
-.medium-flag {
-    width: 200px; /* Orta boy bayrak genişliği */
-    height: 100px; /* Orta boy bayrak yüksekliği */
-}
-
 .small-flag {
     width: 100px; /* Küçük boy bayrak genişliği */
-    height: 50px; /* Küçük boy bayrak yüksekliği */
+    height: 60px; /* Küçük boy bayrak yüksekliği */
 }
 
+/* Banner konteynerı */
 .banner-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px; /* Sayfanın üst kısmında biraz boşluk bırak */
+}
+
+.banner-container a {
+    display: inline-block;
 }
 
 .banner-container img {
-    max-width: 50%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
+    max-width: 100%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
     height: auto; /* Otomatik yükseklik ayarı */
-}
-
-@media only screen and (max-width: 768px) {
-    /* Tablet ve mobil cihazlar için stiller buraya */
-    .flag {
-        width: 50%; /* Mobil cihazlarda bayrakların yarısı genişlikte */
-        max-width: 150px; /* Maksimum genişlik belirleme */
-    }
 }
