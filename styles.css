@@ -35,6 +35,24 @@ body {
     margin: 5px; /* Bayraklar arasındaki boşluk */
 }
 
+/* Büyük konteyner içindeki bayraklar */
+.big-container .flag {
+    width: calc(100% - 10px); /* Büyük konteynerdaki bayrakların genişliği */
+    max-width: 150px; /* Maksimum genişlik */
+}
+
+/* Orta konteyner içindeki bayraklar */
+.medium-container .flag {
+    width: 100%; /* Orta konteynerdaki bayrakların genişliği */
+    height: auto; /* Orta konteynerdaki bayrakların yüksekliği */
+}
+
+/* Küçük konteyner içindeki bayraklar */
+.small-container .flag {
+    width: 100%; /* Küçük konteynerdaki bayrakların genişliği */
+    height: auto; /* Küçük konteynerdaki bayrakların yüksekliği */
+}
+
 /* Medya sorguları */
 @media only screen and (min-width: 600px) {
     /* Tablet ve büyük ekranlar için stiller buraya */
@@ -49,6 +67,9 @@ body {
 
 @media only screen and (max-width: 599px) {
     /* Mobil cihazlar için stiller buraya */
+    .big-container .flag {
+        max-width: 100%;
+    }
     .big-container,
     .medium-container,
     .small-container {
