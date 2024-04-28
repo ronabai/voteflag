@@ -20,7 +20,7 @@ body {
 }
 
 .big-container {
-    width: 80%; /* Büyük konteynerin genişliği artırıldı */
+    width: 70%; /* Büyük konteynerin genişliği */
 }
 
 .medium-container,
@@ -35,12 +35,12 @@ body {
 }
 
 .flag {
-    width: 200px; /* Orta boy bayrak genişliği artırıldı */
-    height: 120px; /* Orta boy bayrak yüksekliği artırıldı */
+    width: 150px; /* Orta boy bayrak genişliği */
+    height: 90px; /* Orta boy bayrak yüksekliği */
     background-size: contain;
     background-position: center;
     cursor: pointer;
-    margin: 5px; /* Bayraklar arasındaki boşluk */
+    margin: 3px; /* Bayraklar arasında boşluk bırak */
 }
 
 .small-flag {
