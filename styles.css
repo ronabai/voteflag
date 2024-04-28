@@ -1,3 +1,4 @@
+/* Genel stiller */
 body {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ body {
 
 .medium-container,
 .small-container {
-    width: 50%; /* Orta ve küçük konteynerlerin genişliği */
+    width: 100%; /* Orta ve küçük konteynerlerin tam genişliği */
 }
 
 .flag-container {
@@ -35,28 +36,17 @@ body {
 }
 
 .flag {
+    width: 100%; /* Bayrakların genişliği */
+    height: auto; /* Bayrakların yüksekliği otomatik ayarlanacak */
     background-size: contain;
     background-position: center;
     cursor: pointer;
-    margin: 3px; /* Bayraklar arasında boşluk bırak */
+    margin: 10px 0; /* Bayraklar arasında boşluk bırak */
 }
 
-/* Büyük boy bayraklar */
-.big-flag {
-    width: 200px; /* Leader flagdaki büyük bayrak genişliği */
-    height: 100px; /* Leader flagdaki büyük bayrak yüksekliği */
-}
-
-/* Orta boy bayraklar */
-.medium-flag {
-    width: 100px; /* Other flags konteynerındaki orta boy bayrak genişliği */
-    height: 50px; /* Other flags konteynerındaki orta boy bayrak yüksekliği */
-}
-
-/* Küçük boy bayraklar */
 .small-flag {
-    width: 60px; /* Little flags konteynerındaki küçük boy bayrak genişliği */
-    height: 30px; /* Little flags konteynerındaki küçük boy bayrak yüksekliği */
+    width: 100px; /* Küçük boy bayrak genişliği */
+    height: 60px; /* Küçük boy bayrak yüksekliği */
 }
 
 /* Banner konteynerı */
@@ -74,14 +64,21 @@ body {
     height: auto; /* Otomatik yükseklik ayarı */
 }
 
-
 /* Medya sorguları */
 @media only screen and (max-width: 768px) {
     /* Tablet ve mobil cihazlar için stiller buraya */
-    .big-container,
+    .big-container {
+        width: 100%; /* Büyük konteyner tam genişlikte */
+    }
     .medium-container,
     .small-container {
-        width: 100%; /* Konteynerlerin tam genişlikte olması */
-        max-width: none; /* Maksimum genişlik sınırlaması kaldırılacak */
+        width: 100%; /* Orta ve küçük konteynerler tam genişlikte */
+    }
+    .flag {
+        width: 50%; /* Mobil cihazlarda bayrakların yarısı genişlikte */
+        max-width: 150px; /* Maksimum genişlik belirleme */
+    }
+    .small-flag {
+        width: 40%; /* Küçük bayrakların genişliği yüzde olarak belirlendi */
     }
 }
