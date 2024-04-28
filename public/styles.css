@@ -43,14 +43,14 @@ body {
 
 /* Büyük boy bayraklar */
 .big-flag {
-    width: 300px; /* Leader flagdaki büyük bayrak genişliği */
-    height: 180px; /* Leader flagdaki büyük bayrak yüksekliği */
+    width: 200px; /* Leader flagdaki büyük bayrak genişliği */
+    height: 100px; /* Leader flagdaki büyük bayrak yüksekliği */
 }
 
 /* Orta boy bayraklar */
 .medium-flag {
-    width: 150px; /* Other flags konteynerındaki orta boy bayrak genişliği */
-    height: 90px; /* Other flags konteynerındaki orta boy bayrak yüksekliği */
+    width: 100px; /* Other flags konteynerındaki orta boy bayrak genişliği */
+    height: 50px; /* Other flags konteynerındaki orta boy bayrak yüksekliği */
 }
 
 /* Küçük boy bayraklar */
