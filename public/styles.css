@@ -35,13 +35,13 @@ body {
 }
 
 .medium-flag {
-    width: 300px; /* Orta boy bayrak genişliği */
-    height: 200px; /* Orta boy bayrak yüksekliği */
+    width: 200px; /* Orta boy bayrak genişliği */
+    height: 100px; /* Orta boy bayrak yüksekliği */
 }
 
 .small-flag {
-    width: 150px; /* Küçük boy bayrak genişliği */
-    height: 100px; /* Küçük boy bayrak yüksekliği */
+    width: 100px; /* Küçük boy bayrak genişliği */
+    height: 50px; /* Küçük boy bayrak yüksekliği */
 }
 
 .banner-container {
@@ -50,7 +50,7 @@ body {
 }
 
 .banner-container img {
-    max-width: 100%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
+    max-width: 50%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
     height: auto; /* Otomatik yükseklik ayarı */
 }
 
