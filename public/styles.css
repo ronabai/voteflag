@@ -35,17 +35,28 @@ body {
 }
 
 .flag {
-    width: 150px; /* Orta boy bayrak genişliği */
-    height: 90px; /* Orta boy bayrak yüksekliği */
     background-size: contain;
     background-position: center;
     cursor: pointer;
     margin: 3px; /* Bayraklar arasında boşluk bırak */
 }
 
+/* Büyük boy bayraklar */
+.big-flag {
+    width: 300px; /* Leader flagdaki büyük bayrak genişliği */
+    height: 180px; /* Leader flagdaki büyük bayrak yüksekliği */
+}
+
+/* Orta boy bayraklar */
+.medium-flag {
+    width: 150px; /* Other flags konteynerındaki orta boy bayrak genişliği */
+    height: 90px; /* Other flags konteynerındaki orta boy bayrak yüksekliği */
+}
+
+/* Küçük boy bayraklar */
 .small-flag {
-    width: 100px; /* Küçük boy bayrak genişliği */
-    height: 60px; /* Küçük boy bayrak yüksekliği */
+    width: 60px; /* Little flags konteynerındaki küçük boy bayrak genişliği */
+    height: 30px; /* Little flags konteynerındaki küçük boy bayrak yüksekliği */
 }
 
 /* Banner konteynerı */
