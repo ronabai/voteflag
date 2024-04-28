@@ -48,7 +48,6 @@ body {
     height: 60px; /* Küçük boy bayrak yüksekliği */
 }
 
-/* Banner konteynerı */
 .banner-container {
     text-align: center;
     margin-top: 20px; /* Sayfanın üst kısmında biraz boşluk bırak */
@@ -62,14 +61,14 @@ body {
     max-width: 100%; /* Banner görüntüsünün en fazla genişlikte görüntülenmesi */
     height: auto; /* Otomatik yükseklik ayarı */
 }
+
 @media only screen and (max-width: 768px) {
     /* Tablet ve mobil cihazlar için stiller buraya */
-    .big-container {
-        width: 100%; /* Büyük konteyner tam genişlikte */
-    }
+    .big-container,
     .medium-container,
     .small-container {
-        width: 100%; /* Orta ve küçük konteynerler tam genişlikte */
+        width: 100%; /* Konteynerlerin tam genişlikte olması */
+        max-width: none; /* Maksimum genişlik sınırlaması kaldırılacak */
     }
     .flag {
         width: 50%; /* Mobil cihazlarda bayrakların yarısı genişlikte */
